@@ -39,6 +39,4 @@ testem.log
 
 # System files
 .DS_Store
-Thumbs.db
-git config --global user.name "mickias-zerfu"
-git config --global user.email "mickiaszerfu@gmail.com"
+Thumbs.db 
