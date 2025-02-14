@@ -1,0 +1,56 @@
+<section class="our-story  flex flex-col">
+  <!-- Groom's Section -->
+  <div class="groom-section flex-1 flex items-center justify-center bg-gray-50">
+    <div class="container mx-auto flex items-center gap-8 p-8 m-4">
+      <!-- Groom Content -->
+      <div class="w-3/5">
+        <h2 class="text-4xl font-ubuntu font-bold text-gray-800 mb-4">Meet the Groom</h2>
+        <h3 class="text-2xl font-ubuntu text-gray-600 mb-6">Samuel Heiru</h3>
+        <p class="text-lg font-montserrat text-gray-600 leading-relaxed">
+          From the moment Sam met Betty, he knew she was special. Their journey has been filled with laughter, adventure, and love. Sam is a kindhearted and passionate person who cherishes every moment spent with Betty.
+        </p>
+      </div>
+      <!-- Groom Slider -->
+      <div class="w-2/5 m-2">
+        <div class="groom-slider glide">
+          <div class="glide__track" data-glide-el="track">
+            <ul class="glide__slides m-4">
+              <li *ngFor="let img of groomImages" class="glide__slide">
+                <img [src]="img" alt="Groom" class="w-full h-96 object-contain rounded-lg shadow-xl">
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bride's Section -->
+  <div class="bride-section flex-1 flex items-center justify-center bg-white">
+    <div class="container mx-auto flex items-center gap-8 p-8">
+      <!-- Bride Slider -->
+      <div class="w-3/5">
+        <div class="bride-slider glide">
+          <div class="glide__track" data-glide-el="track">
+            <ul class="glide__slides">
+              <li *ngFor="let img of brideImages" class="glide__slide">
+                <img [src]="img" alt="Bride" class="w-full h-64 object-cover object-top rounded-lg shadow-xl">
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- Bride Content -->
+      <div class="w-2/5 betty-container">
+        <!-- <h2 class="text-4xl font-ubuntu font-bold text-gray-800 mb-4">Meet the Bride</h2> -->
+        <h3 class="text-2xl font-ubuntu text-gray-600 mb-6 betty">Bethelhem S.</h3>
+        <p class="text-lg font-montserrat text-gray-600 leading-relaxed">
+          Betty's love for Sam grew stronger with each passing day. 
+          She is an amazing, compassionate, and loving soul, 
+          making every moment with Sam full of joy and meaning. 
+          She is excited to embark on this beautiful journey together.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>

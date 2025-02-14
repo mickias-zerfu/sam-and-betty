@@ -1,0 +1,62 @@
+<section class="gallery-section w-full p-10 bg-gray-100">
+    <h2 class="text-4xl font-bold text-center text-gray-800 mb-8">Our Gallery</h2>
+    <div class="grid grid-cols-3 md:grid-cols-4 gap-6">
+      <!-- Flip Animation -->
+      <div class="group perspective">
+        <div class="relative w-full h-56 transform transition-all duration-500 group-hover:rotate-y-180">
+          <img src="assets/images/042.webp" alt="Gallery Image" class="absolute w-full h-full object-cover backface-hidden">
+          <div class="absolute w-full h-full bg-gray-800 flex items-center justify-center text-white text-lg font-semibold rotate-y-180 backface-hidden">
+            <img src="assets/images/012.webp" alt="Gallery Image" class="absolute w-full h-full object-contain backface-hidden">
+          </div>
+        </div>
+      </div>
+      
+      <!-- Fade Effect -->
+      <div class="relative overflow-hidden fade-hover">
+        <img src="assets/images/044.webp" alt="Gallery Image" class="w-full h-56 object-cover">
+      </div>
+      
+      <!-- Glide Animation -->
+      <div #galleryGlide class="top-glide glide">
+        <div class="glide__track" data-glide-el="track">
+          <ul class="glide__slides">
+            <li class="glide__slide"><img src="assets/images/07.webp" alt="Gallery Image" class="img-top"></li>
+            <li class="glide__slide"><img src="assets/images/063.webp" alt="Gallery Image" class="img-top"></li>
+            <li class="glide__slide"><img src="assets/images/065.webp" alt="Gallery Image" class="img-top"></li>
+          </ul>
+        </div>
+      </div>
+      
+      <!-- Swipe Effect -->
+      <div class="relative overflow-hidden swipe-hover">
+        <img src="assets/images/012.webp" alt="Gallery Image" class="w-full h-56 object-cover">
+      </div>
+    </div> 
+</section>
+<section id="gallery" class="py-16 px-4 bg-gray-100">
+    <div class="container mx-auto"> 
+      <!-- Gallery Slider -->
+      <div class="gallery-slider glide">
+        <div class="glide__track" data-glide-el="track">
+          <ul class="glide__slides">
+            <li *ngFor="let img of OurImages" class="glide__slide">
+              <div class="relative group">
+                <img [src]="img" alt="Gallery Image" class="w-full h-64 object-cover rounded-lg shadow-lg transform transition-transform duration-300 group-hover:scale-105">
+                <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg">
+                  <span class="text-white text-lg font-montserrat">❤️</span>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  Masonory Section 
+  <ngx-masonry [options]="{ gutter: 1 }">
+    <div ngxMasonryItem class="masonry-item" *ngFor="let item of masonaryImages">
+      <img [src]="item" alt="Gallery Image" masonryLazy loading="lazy" width="400px" height="600px" 
+      >   
+   </div>
+  </ngx-masonry>

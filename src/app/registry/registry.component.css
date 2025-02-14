@@ -1,0 +1,76 @@
+/* General Styling */
+#signing-board {
+  font-family: 'Caveat', cursive; /* Handwritten style font */
+  background-image: url('https://www.transparenttextures.com/patterns/white-wall.png'); /* Subtle background texture */
+}
+
+/* Masonry Layout */
+.masonry-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  padding: 10px;
+}
+
+/* Message Card */
+.message-card {
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.1);
+  font-size: 1.2rem;
+  font-weight: 500;
+  animation: fadeIn 0.6s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transform: rotate(-2deg);
+}
+
+.message-card:nth-child(even) {
+  transform: rotate(2deg);
+}
+
+.message-card:hover {
+  transform: scale(1.05);
+}
+
+/* Fade In Animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Input Fields */
+input, textarea {
+  transition: all 0.3s ease-in-out;
+  font-family: 'Poppins', sans-serif;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 5px rgba(37, 99, 235, 0.5);
+}
+
+/* Button Styling */
+button {
+  transition: background-color 0.3s ease-in-out;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 8px;
+}
+
+button:hover {
+  background-color: #1e40af;
+}
+.betty-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../../assets/blu-08.jpg");
+}
+.betty {
+  color: #000000;
+  font-family: "Ubuntu", Sans-serif;
+  font-size: 30px;
+  text-shadow: 5px 5px 0px #FFFFFF; 
+  line-height: 1.2em;
+}

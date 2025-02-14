@@ -1,0 +1,15 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import 'aos/dist/aos.css';
+@import 'swiper/swiper-bundle.css';
+@import '@glidejs/glide/dist/css/glide.core.min.css';
+@import '@glidejs/glide/dist/css/glide.theme.min.css';
+/* @import '@material/image-list/mdc-image-list'; */
+
+@import 'swiper/css'; /* Import core styles */
+@import 'swiper/css/navigation'; /* Import navigation styles (if needed) */
+@import 'swiper/css/pagination'; /* Import pagination styles (if needed) */
+@import 'swiper/css/effect-fade'; /* Import fade effect styles */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

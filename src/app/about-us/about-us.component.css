@@ -1,0 +1,82 @@
+/* Glide.js Styles */
+.glide {
+  position: relative;
+  width: 100%;
+}
+
+.glide__track {
+  overflow: hidden;
+}
+
+.glide__slides {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.glide__slide {
+  flex: 0 0 auto;
+  width: 100%;
+}
+
+/* Custom Styles */
+.our-story {
+  /* height: 100vh; */
+  overflow: hidden;
+}
+
+/* .groom-section, .bride-section {
+    height: 50vh;
+  } */
+
+.groom-section {
+  background: linear-gradient(to right, #f7f7f7, #ffffff);
+}
+
+.bride-section {
+  background: linear-gradient(to left, #f7f7f7, #ffffff);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.shadow-xl {
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .groom-section,
+  .bride-section {
+    height: auto;
+    padding: 4rem 1rem;
+  }
+
+  .container {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .w-2\/5,
+  .w-3\/5 {
+    width: 100%;
+  }
+
+  .groom-section .container {
+    flex-direction: column-reverse;
+  }
+}
+.betty-container{
+  background-image: url("../../assets/blu-08.jpg");
+}
+.betty {
+  color: #000000;
+  font-family: "Ubuntu", Sans-serif;
+  font-size: 50px;
+  text-shadow: 5px 5px 0px #FFFFFF; 
+  line-height: 1.2em;
+}

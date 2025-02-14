@@ -1,0 +1,10 @@
+<nav *ngIf="isHeaderVisible" class="sticky-nav bg-white bg-opacity-90 backdrop-blur-md shadow-md p-4 transition-transform duration-300">
+  <ul class="flex justify-center gap-8">
+    <li><a (click)="scrollTo('home')" class="text-gray-700 hover:text-sage-green cursor-pointer">Home</a></li>
+    <li><a (click)="scrollTo('about-us')" class="text-gray-700 hover:text-sage-green cursor-pointer">About Us</a></li>
+    <li><a (click)="scrollTo('our-story')" class="text-gray-700 hover:text-sage-green cursor-pointer">Our Story</a></li>
+    <li><a (click)="scrollTo('wedding-details')" class="text-gray-700 hover:text-sage-green cursor-pointer">Wedding Details</a></li>
+    <li><a (click)="scrollTo('registry')" class="text-gray-700 hover:text-sage-green cursor-pointer">Registry</a></li>
+    <li><a (click)="scrollTo('subscribe')" class="text-gray-700 hover:text-sage-green cursor-pointer">Subscribe</a></li>
+  </ul>
+</nav>
