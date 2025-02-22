@@ -1,6 +1,5 @@
 import { AfterViewInit, Component, OnInit } from '@angular/core';
-import { ActivatedRoute, RouterOutlet } from '@angular/router';
-import * as AOS from 'aos';
+import { ActivatedRoute, RouterOutlet } from '@angular/router'; 
 import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
 import { OurStoryComponent } from './our-story/our-story.component';
@@ -32,8 +31,7 @@ import { FooterComponent } from './footer/footer.component'; // ✅ Import Heade
 export class AppComponent implements OnInit, AfterViewInit {
   constructor(private route: ActivatedRoute) {}
 
-  ngOnInit(): void {
-    AOS.init();
+  ngOnInit(): void { 
   }
 
   ngAfterViewInit(): void {
