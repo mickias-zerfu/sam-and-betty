@@ -1,6 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
-
-@import 'aos/dist/aos.css';
+ 
 @import 'swiper/swiper-bundle.css';
 @import '@glidejs/glide/dist/css/glide.core.min.css';
 @import '@glidejs/glide/dist/css/glide.theme.min.css';

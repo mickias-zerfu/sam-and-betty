@@ -8,12 +8,11 @@ import {
 } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 // import { MDCImageList } from '@material/image-list';
-import Glide from '@glidejs/glide';
-import { NgxMasonryModule } from 'ngx-masonry';
+import Glide from '@glidejs/glide'; 
 @Component({
   selector: 'app-gallery',
   standalone: true, 
-  imports: [CommonModule,NgxMasonryModule],
+  imports: [CommonModule],
   templateUrl: './gallery.component.html',
   styleUrl: './gallery.component.css',
 })
