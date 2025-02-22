@@ -1,28 +1,144 @@
 <section id="signing-board" class="w-full p-10 bg-gray-100">
-  <h2 class="text-4xl font-bold text-center text-gray-800 mb-6">💌 Leave Your Wishes</h2>
+  <h2 class="text-4xl font-bold text-center text-gray-800 mb-6">
+    💌 Leave Your Wishes
+  </h2>
   <div class="story-grid grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
-  <div class="w-full max-w-3xl mx-4 bg-white p-6 rounded-lg shadow-lg">
-    <!-- Input Form -->
-    <form (submit)="addMessage($event)" class="flex flex-col space-y-4">
-      <input type="text" [(ngModel)]="guestName" name="guestName" placeholder="Your Name"
-             class="w-full p-3 border rounded-lg focus:ring-2 focus:ring-blue-500">
-      <textarea [(ngModel)]="guestMessage" name="guestMessage" rows="4" placeholder="Your Message"
-                class="w-full p-3 border rounded-lg focus:ring-2 focus:ring-blue-500"></textarea>
-      <button type="submit" class="bg-pink-400 text-white px-6 py-3 rounded-lg shadow-md transition hover:bg-blue-700">Submit</button>
-    </form>    
-  </div>
-  <div>
-    <div class=" betty-container"> 
-      <h3 class="text-2xl font-ubuntu text-gray-600 mb-6 betty"> ያገባም አገባ ያጭዕም ደግሞ ዐጨ <br/> ሚኪ ብቻ ቀረ ጺሙን እየላጨ! </h3>
+    <div class="w-full max-w-3xl mx-4 bg-white p-6 rounded-lg shadow-lg">
+      <!-- Input Form -->
+      <form (submit)="addMessage($event)" class="flex flex-col space-y-4">
+        <input
+          type="text"
+          [(ngModel)]="guestName"
+          name="guestName"
+          placeholder="Your Name"
+          class="w-full p-3 border rounded-lg focus:ring-2 focus:ring-blue-500"
+        />
+        <textarea
+          [(ngModel)]="guestMessage"
+          name="guestMessage"
+          rows="4"
+          placeholder="Your Message"
+          class="w-full p-3 border rounded-lg focus:ring-2 focus:ring-blue-500"
+        ></textarea>
+        <button
+          type="submit"
+          class="bg-pink-400 text-white px-6 py-3 rounded-lg shadow-md transition hover:bg-blue-700"
+        >
+          Submit
+        </button>
+      </form>
+    </div>
+    <div
+      class="betty-container w-full max-w-3xl mx-4 bg-white p-6 rounded-lg shadow-lg"
+    >
+      <div class="betty-container">
+        <div>
+          <h1 class="text-2xl font-ubuntu text-gray-600 mb-6 betty-title">
+            መዝሙር 13:6
+          </h1>
+          <h2 class="text-2xl font-ubuntu text-gray-600 mb-6 betty">
+            ቸርነቱ በዝቶልኛልና፣ ለእግዚአብሔር እዘምራለሁ።
+          </h2>
+        </div>
+        <!-- <div>
+          <h1 class="text-2xl font-ubuntu text-gray-600 mb-6 betty-title">
+            Psalms 13:6
+          </h1>
+          <h2 class="text-2xl font-ubuntu text-gray-600 mb-6 betty">
+            I will sing the Lord’s praise, for he has been good to me.
+          </h2>
+          <br />
+        </div> -->
       </div>
     </div>
-  </div> 
+  </div>
   <!-- Messages Display in Masonry Grid -->
   <div class="max-w-5xl mx-auto mt-8">
-    <h3 class="text-2xl font-semibold text-gray-700 mb-4 text-center">📜 Guest Messages</h3>
+    <h3 class="text-2xl font-semibold text-gray-700 mb-4 text-center">
+      📜 Special Thanks
+    </h3>
+    <section class="w-full py-16 px-6 bg-gray-100">
+      <!-- First Row: Thanks to God and Family -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-10 mb-16">
+        <div class="text-center md:text-left">
+          <h2 class="text-5xl font-bold text-gray-800 mb-4">GOD</h2>
+          <p class="text-lg text-gray-700 leading-relaxed">
+            ታላቁ አምላካችንን እንዴት ልንገልጸው እንደምንችል አናውቅም። በውስጣችን ለእርሱ ያለ መውደድ ልዪ
+            ነው።ከመፈጠራችን ቀድሞ ቀኖቻችንን ያየ : ከልጅነት አይኑን ጥሎ ያሳደገ : ከብዙ ጉዳት የጠበቀን ;
+            ከአስፈሪ ውድቀት የከለከለልን : በጥፋታችን ጠፍተን እንዳንቀር ምህረቱን ያገነነልን ; በቤቱ ጸንተን
+            እንድንኖር ያትረፈረፈልን ቸርነቱ ; ለሁለንተናችን ማዕድ ከመልካምነቱ ያቋደሰን ; እጅግ ብዙ ብዙ የሆነ
+            ሊገለጽ የማይችል ጥልቅ መውደድ ; የልጅነታችን አምላክ . . የእኛ የራሳችን ቃላቶቻችንን ሊገልጹት
+            አይችሉምና እርሱ ራሱን በገለጠበት እና በገለጸበት ቅዱስ ቃሉ ተውሰን ምስጋናችንን እንሰዋ . . . <br />
+            <strong>"በእርሱ የሚያምን ሁሉ የዘላለም ሕይወት እንዲኖረው እንጂ እንዳይጠፋ..."</strong> -
+            ዮሐንስ 3:16
+          </p>
+        </div>
+        <div class="text-center md:text-left">
+          <h2 class="text-5xl font-bold text-gray-800 mb-4">Our Family</h2>
+          <p class="text-lg text-gray-700 leading-relaxed">
+            የቤተሰቦቻችንን ለእኛ ዋጋ መክፈል ለእኛ መውደድ ለመግለጽ አስቸጋሪ ነው። ይህው አሳድገውን ለወግ ለማዕረግ
+            አብቅተው ይህው ወደ አዲሱ ቤታችን ሊሸኙን በቅተዋል። በተለይ በዝምታ ውስጥ ሁሉን ስለመቻል ትዕግስታቸው ብዙ
+            ስለሆነ እና ህመማቸውን አለመቻላቸውን ሁሉ ዋጥ እያደረጉ ከነፍሳቸው ቆርሰው ያሳደጉን አባቶቻችን : ደግሞም
+            እንክብካቤ እና ፍቅራቸው ከልጅነት ደግሞም አደጉ ራሳቸውን ቻሉ ብለው ያልተዉ ቁጥጥራቸው በአካል ብንርቅም
+            ያልቀነ ለእኛ አሳቢነታቸው ብዙ ስለሆኑት እናቾቻችን አምላካችንን እግዚአብሔርን እናመሰግናለን።
+          </p>
+        </div>
+      </div>
+
+      <!-- Second Row: Thanks to Pastors -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+        <div class="text-center md:text-left flex items-center gap-4">
+          <img
+            src="assets/images/childhood.jpg"
+            class="w-24 h-24 object-cover rounded-full shadow-md"
+            alt="Childhood Pastor"
+          />
+          <div>
+            <h3 class="text-2xl font-semibold text-gray-800">
+              Our Childhood Pastor
+            </h3>
+            <p class="text-lg text-gray-700">
+              መጋቢያዊው እንክብካቤ የልጅነታችንን አምላክ እንድናውቅ እንድንወድ ደግሞም እንድንፈራ በሕይወት ምሳሌነት
+              ከፊት የመሩንን ደግሞም ኢየሱስን በመከተል ሕይወት የደቀመዝሙርነት ሕይወታችንን ከማር ይልቅ የሚጣፍጠውን
+              የከበረውን የሕይወት መርህ መቅጃ ምንጭ የሆነውን ቅዱስ ቃሉን በመውደድ እንድናድግ ደግሞ በአምልኮ
+              ሕይወታችን ሁለንተናዊ እድገት ካላቸው የምክር ቃል ጥቂት እንኳን ያላጎደሉብንን የልጅነታችን
+              የቤተክርስቲያን መጋቢዎቻችንን እና መምህራኖቻችንን ስለእነርሱ የዘመናት አምላክ እግዚአብሔር በየዘመኑ
+              የእርሱ የሆኑ አሉትና ለስሙ ምስጋና ይሁን።
+            </p>
+          </div>
+        </div>
+        <div class="text-center md:text-left flex items-center gap-4">
+          <img
+            src="assets/images/zer.jpg"
+            class="w-24 h-24 object-cover rounded-full shadow-md"
+            alt="Current Pastor"
+          />
+          <div>
+            <h3 class="text-2xl font-semibold text-gray-800">
+              Our Present Pastor
+            </h3>
+            <p class="text-lg text-gray-700">
+              አሁን ወዳለንበት የቅዱሳን ሕብረት ስንቀላቀል በፍጹም እንግድነት እንዳይሰማን በፍጥነት ቤተሰብ እንድንሆን
+              ያደረገን ደግሞም ለአዲስነታችን ፍርሃት ሳያድርበት እናገለግል ዘንድ ሁሉንም መልካም እድል የሰጠን የፍቅር
+              ግንኙነታችን ወደ ጋብቻ ያድግ ዘንድ የሁልጊዜ ምክሩ እና ጸሎቱ የማይለየን ደግሞ ለጋብቻ በወሰንን ጊዜ
+              አብሮን ለአንድ ወር የጾምና የጸሎት ጊዜ የሰጠን ነገ ተብሎ በሚጠራ ቀናችን ላይ መልካም የተባለ ሁሉ
+              እንዲያገኝን ስለነፍሳችን የሚተጋ ካለው ሁሉ የማይሰስት : ሩቅ ሆኖ ሳይሆን ቤቱ ድረስ አስጠግቶ አባታዊ
+              ፍቅሩን የሚቸረን ውድ መጋቢያችን ፓስተር ዘሪሁን እንዲሁም የቤተክርስቲያናችን አገልጋዬች ስለእናንተ
+              የበረከት አምላክ እግዚአብሔር ይባረክ
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <div class="masonry-grid">
-      <div *ngFor="let message of messages" class="message-card" [ngStyle]="{'background-color': message.color}">
+      <div
+        *ngFor="let message of messages"
+        class="message-card"
+        [ngStyle]="{ 'background-color': message.color }"
+      >
         <p class="text-lg font-semibold text-gray-800">{{ message.name }}</p>
+        <img src="{{ message.src }}" alt="" srcset="" />
         <p class="text-gray-700 italic">{{ message.text }}</p>
       </div>
     </div>

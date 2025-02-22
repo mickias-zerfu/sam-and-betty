@@ -62,15 +62,29 @@ button:hover {
   background-color: #1e40af;
 }
 .betty-container{
+  margin: 5px auto;
+  padding-top: 15px;
+  align-items: center;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center;  
   background-image: url("../../assets/blu-08.jpg");
+  border-radius: 5px;
 }
-.betty {
+.betty-title {
   color: #000000;
   font-family: "Ubuntu", Sans-serif;
-  font-size: 30px;
+  font-size: 50px;
+  text-shadow: 5px 5px 0px #FFFFFF; 
+  line-height: 1.2em;
+  text-align: center;
+  margin: auto;
+}
+.betty { 
+  color: #000000;
+  text-align: center;
+  font-family: "Ubuntu", Sans-serif;
+  font-size: 40px;
   text-shadow: 5px 5px 0px #FFFFFF; 
   line-height: 1.2em;
 }
