@@ -19,12 +19,27 @@ import { NgxMasonryModule } from 'ngx-masonry';
 })
 export class GalleryComponent implements OnInit, AfterViewInit {
   ngOnInit(): void {
-    this.loadImages();
-    this.loadMasonaryImages();
+    this.loadImages(); 
   }
   @ViewChild('galleryGlide', { static: false }) galleryGlide!: ElementRef;
   OurImages: string[] = [];
-  masonaryImages: string[] = [];
+  masonaryImages: string[] = [
+    'assets/images/070.webp',
+    'assets/images/068.webp',
+    'assets/images/066.webp',
+    'assets/images/063.webp',
+    'assets/images/059.webp',
+    'assets/images/056.webp',
+    'assets/images/054.webp',
+    'assets/images/061.webp',
+    'assets/images/052.webp',
+    'assets/images/025.webp',
+    'assets/images/036.webp',
+    'assets/images/033.webp',
+    'assets/images/09.webp',
+    'assets/images/06.webp',
+    'assets/images/03.webp',
+  ];
   ngAfterViewInit(): void {
     new Glide(this.galleryGlide.nativeElement, {
       type: 'carousel',
@@ -59,12 +74,7 @@ export class GalleryComponent implements OnInit, AfterViewInit {
       this.OurImages.push(`assets/images/0${i}.webp`);
     }
   }
-  
-  loadMasonaryImages() {
-    for (let i = 40; i <= 50; i++) {
-      this.masonaryImages.push(`assets/images/0${i}.webp`);
-  }
-}
+   
   getRandomSize() {
     const sizes = ['h-40', 'h-56', 'h-72', 'h-96'];
     return sizes[Math.floor(Math.random() * sizes.length)];

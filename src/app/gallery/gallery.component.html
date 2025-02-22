@@ -52,11 +52,21 @@
       </div>
     </div>
   </section>
-
-  Masonory Section 
-  <ngx-masonry [options]="{ gutter: 1 }">
+ 
+  <!-- <ngx-masonry [options]="{ gutter: 1 }">
     <div ngxMasonryItem class="masonry-item" *ngFor="let item of masonaryImages">
       <img [src]="item" alt="Gallery Image" masonryLazy loading="lazy" width="400px" height="600px" 
       >   
    </div>
-  </ngx-masonry>
+  </ngx-masonry> -->
+  <section class="gallery-section w-full p-6 md:p-10 bg-gray-100">
+   
+    <!-- Responsive Masonry Grid with CSS -->
+    <div class="columns-1 sm:columns-2 md:columns-3 lg:columns-4 gap-4 space-y-4">
+      <div *ngFor="let item of masonaryImages" class="break-inside-avoid overflow-hidden rounded-lg shadow-lg">
+        <img [src]="item" alt="Gallery Image" loading="lazy" class="w-full h-auto object-cover rounded-lg">
+      </div>
+    </div>
+  </section>
+  
+  
