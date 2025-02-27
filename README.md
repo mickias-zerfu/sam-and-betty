@@ -1,4 +1,34 @@
 # SamAndBetty
+# Wedding Website for Sami
+
+🎉 **Welcome to Sami's Wedding Website** 🎉
+
+*https://sam-and-betty.onrender.com/*
+
+This is a beautifully designed and modern wedding website, developed with love by **Mikiyas Zerfu** for a dear friend, **Sami**. The site provides an elegant and interactive experience for wedding guests, allowing them to explore the couple’s journey, RSVP, leave wishes, and more.
+
+## 🚀 Features
+- **Modern & Responsive Design** 🌍📱
+- **Beautiful Masonry Gallery** 🖼️
+- **Interactive Signing Board** ✍️
+- **YouTube Subscription Section** 🎥
+- **Pastor & Family Appreciation Section** 🙏
+- **Smooth Animations & Transitions** ✨
+- **Performance Optimized & Mobile-Friendly** ⚡
+
+## 🛠️ Technologies Used
+- **Frontend:** Angular, Tailwind CSS, HTML, TypeScript
+- **Animations & Effects:** Glide.js, CSS Transitions, Masonry Grid
+- **Hosting & Deployment:** Render.com
+  
+## 🎉 Credits
+Developed with ❤️ by **Mikiyas Zerfu** for **Sami** and his wedding celebration.
+
+## 📞 Contact
+For any inquiries, reach out to me at **+251938117260** 
+
+---
+Thank you for visiting! May Sami’s wedding be filled with love, joy, and endless blessings. 🎊💍
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.11.
 
